@@ -75,6 +75,12 @@ class PlatformProvider extends OrchidServiceProvider
                 ->permission('platform.systems.roles')
                 ->divider(),
 
+            // Menu::make(__('agences crud'))
+            //     ->icon('bs.lock')
+            //     ->route('agences.store')
+            //     ->permission('platform.systems.roles')
+            //     ->divider(),    
+
             Menu::make('Documentation')
                 ->title('Docs')
                 ->icon('bs.box-arrow-up-right')

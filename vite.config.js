@@ -29,6 +29,21 @@ export default defineConfig({
                 'resources/assets/vendor/simple-datatables/simple-datatables.js',
                 'resources/assets/vendor/tinymce/tinymce.min.js',
                 'resources/assets/vendor/php-email-form/validate.js',
+                //
+                //Favicons 
+                'resources/assets/img/favicon.png', 
+                'resources/assets/img/apple-touch-icon.png', 
+                 // Vendor CSS Files
+                'resources/assets/vendor/boxicons/css/boxicons.min.css', 
+                'resources/assets/vendor/boxicons/css/boxicons.min.css', 
+                'resources/assets/vendor/quill/quill.snow.css', 
+                'resources/assets/vendor/quill/quill.bubble.css', 
+                'resources/assets/vendor/remixicon/remixicon.css', 
+                'resources/assets/vendor/simple-datatables/style.css',
+                //
+                'resources/assets/img/logo.png',
+
+                
             ],
             refresh: true,
         }),

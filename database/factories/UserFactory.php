@@ -4,6 +4,9 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+//
+//use Orchid\Platform\Models\User;
+//use Orchid\Support\Facades\Admin;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
@@ -15,8 +18,17 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+    // protected $model = User::class;
+
     public function definition(): array
     {
+        // $isAdmin = fake()->boolean(30);
+
+        // if($isAdmin) {
+        //     return Admin::factory()->create();
+        // }
+        
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),

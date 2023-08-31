@@ -7,6 +7,8 @@ use Orchid\Filters\Types\Where;
 use Orchid\Filters\Types\WhereDateStartEnd;
 use Orchid\Platform\Models\User as Authenticatable;
 
+// use Spatie\Permission\Traits\HasRoles;
+
 class User extends Authenticatable
 {
     /**
@@ -14,6 +16,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    //use HasRoles;
+
     protected $fillable = [
         'name',
         'email',
@@ -67,4 +71,9 @@ class User extends Authenticatable
         'updated_at',
         'created_at',
     ];
+
+    public function employe()
+    {
+        return $this->belongsTo(Employe::class);
+    }
 }
